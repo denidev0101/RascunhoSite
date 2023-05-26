@@ -1,0 +1,101 @@
+/* Estilos gerais */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Cabeçalho */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+}
+
+#logo{
+  margin: 3%;
+  width: 45%;
+  height: auto;
+}
+
+header > a{
+  text-decoration: none;
+}
+
+
+
+
+/* Barra de navegação */
+nav{
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Seção principal */
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+/* Cards de listagem */
+.listing-card {
+
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.listing-card  img{
+  width: 80%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.listing-card > div{
+  margin-left: -40%;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+#pfooter{
+text-align: left;
+padding-top: 2%;
+padding-bottom: 5%;
+
+}
