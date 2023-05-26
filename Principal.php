@@ -4,11 +4,14 @@ $type = $_GET["type"] ?? '';
 
     if($type=="mansoes"){
       $data=$geral["Mansões"];
+      $type="mansoes";
     }else if($type=="quartos"){
       $data=$geral["Quartos"];
+      $type="quartos";
 
     }else if($type=="fazendas"){
       $data=$geral["Fazendas"];
+      $type="fazendas";
 
     }else{
       $data=$geral;
@@ -21,7 +24,7 @@ $type = $_GET["type"] ?? '';
 <head>
   <meta charset="UTF-8">
   <title>Área cheap</title>
-  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet"  href="estiliza.css">
 </head>
 
 <body>
@@ -37,7 +40,7 @@ $type = $_GET["type"] ?? '';
   </header>
     <nav>
       <ul>
-        <li><a href="Principal.php">Em Alta</a></li>
+        <li><a href="Principal.php"><strong>Em Alta</strong></a></li>
         <li><a href="?type=mansoes">Mansão</a></li>
         <li><a href="?type=quartos">Quarto</a></li>
         <li><a href="?type=fazendas">Fazenda</a></li>
@@ -76,9 +79,10 @@ $type = $_GET["type"] ?? '';
       }       
     }else{
         foreach($data as $iUm => $aCategoria){
+
           ?>
           <div class="listing-card">
-             <a href="principalDetalhes.php">
+             <a href="principalDetalhes.php?index=<?=$iUm?>&type=<?=$type?>">   //
             <img src="<?=$aCategoria["Foto"]?>" alt="<?=$aCategoria["Localização"]?>"> 
            
             <div>

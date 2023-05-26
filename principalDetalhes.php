@@ -1,7 +1,7 @@
 <?php 
 require ("dadosgerais.php");
 
-if (!isset($_GET['type']) || !isset($_GET['index'])) {
+if (!isset($_GET['type']) && !isset($_GET['index'])) {
   header('Location: Principal.php');
   exit();
 } else if ($_GET['type'] != 'mansoes' && $_GET['type'] != 'fazendas' && $_GET['type'] != 'quartos') {
@@ -40,7 +40,7 @@ if ($_GET['type'] == 'fazendas') {
 <head>
   <meta charset="UTF-8">
   <title>Área cheap</title>
-  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet"  href="estiliza.css">
 </head>
 
 <body>
